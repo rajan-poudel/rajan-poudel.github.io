@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
    <html lang="en">
    <head>
@@ -47,6 +46,55 @@
 <meta name="author" content="Rajan Poudel">
 <meta name="keywords" content="Rajan Poudel, software developer, aspiring doctor, quantum physicist, billionaire, world leader, founder, personal portfolio, technology, innovation, leadership, student achievements, research papers, software projects, STEM leader, Ankuram, Ankuram Academy">
 <meta name="robots" content="index, follow">
+
+      <!--=============== ADMIN LINK STYLES (inherits site font and theme colors) ===============-->
+      <style>
+         .admin-access {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 1rem 1.5rem;
+            box-sizing: border-box;
+         }
+
+         .admin-access__link {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .6rem 1.1rem;
+            font-family: inherit;
+            font-size: clamp(.8rem, 2.6vw, .95rem);
+            color: inherit;            /* follows light/dark theme */
+            text-decoration: none;
+            border: 1px solid currentColor;
+            border-radius: .5rem;
+            opacity: .7;
+            transition: opacity .3s, transform .3s;
+         }
+
+         .admin-access__link i {
+            font-size: 1.15em;
+         }
+
+         .admin-access__link:hover,
+         .admin-access__link:focus-visible {
+            opacity: 1;
+            transform: translateY(-2px);
+         }
+
+         .admin-access__link:focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 3px;
+         }
+
+         @media screen and (max-width: 340px) {
+            .admin-access__link {
+               width: 100%;
+               justify-content: center;
+            }
+         }
+      </style>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -310,6 +358,14 @@
               Powered by <a href="https://globsoft.tech">GlobSoft Inc.</a>
                
             </span>
+         </div>
+
+         <!--==================== ADMIN ACCESS ====================-->
+         <div class="admin-access">
+            <a href="/mbbs" class="admin-access__link" aria-label="Admin access: go to MBBS page">
+               <i class="ri-admin-line"></i>
+               <span>Are you the admin?</span>
+            </a>
          </div>
       </footer>
 
